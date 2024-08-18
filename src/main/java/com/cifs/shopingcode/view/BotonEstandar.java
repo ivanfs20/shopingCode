@@ -7,8 +7,6 @@ package com.cifs.shopingcode.view;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
@@ -22,8 +20,7 @@ public class BotonEstandar extends JButton {
     private static final int tamañoH = 10;
     private static final Color colorBackD = Color.black;
     private static Color colorFore = Color.white;
-   // private static BotonEstandar bt = null;
-    //private static final int fuenteLetra = Font.ITALIC;
+
 
     public BotonEstandar(String texto, int x, int y) {
         this.setText(texto);

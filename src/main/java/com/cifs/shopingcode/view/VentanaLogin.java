@@ -24,7 +24,7 @@ public class VentanaLogin extends JFrame{
     public static VentanaLogin ventanaLogin = null;
     
     public VentanaLogin() {
-        GroupLayout gr = new GroupLayout(this);
+        this.setLayout(null);
         this.setSize(300, 200);
         this.setLocationRelativeTo(null);
         this.setUndecorated(true);
@@ -68,7 +68,7 @@ public class VentanaLogin extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 ventanaLogin.dispose();
-                VentanaPrincipal ventanaP = new VentanaPrincipal();
+                VentanaPrincipal ventanaP = new VentanaPrincipal(txtUser.getText());
             }
         });
          

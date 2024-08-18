@@ -4,28 +4,18 @@
  */
 package com.cifs.shopingcode.view;
 
-import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.print.PageFormat;
-import java.awt.print.Printable;
-import java.awt.print.PrinterException;
-import java.awt.print.PrinterJob;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.FileSystem;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.GroupLayout;
-import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.filechooser.FileSystemView;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -63,7 +53,7 @@ public class PanelVender extends PanelesLaterales {
     public static String nameFIle = null;
 
     public PanelVender() {
-        GroupLayout gr = new GroupLayout(this);
+        
 
         //TAMAÑOS STANDAR = W (110) / H (20)
         LabelEstandarizado tApPaterno = new LabelEstandarizado("APELLIDO PATERNO");
@@ -159,6 +149,8 @@ public class PanelVender extends PanelesLaterales {
                 try {
                     if (!file.exists()) {
                         file.createNewFile();
+                    }else{
+                        file.delete();
                     }
 
                     FileWriter fileWriter = new FileWriter(file);

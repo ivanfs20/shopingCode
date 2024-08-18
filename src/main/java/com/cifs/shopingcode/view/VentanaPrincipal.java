@@ -18,9 +18,13 @@ public class VentanaPrincipal extends JFrame {
     public static final int tamañoH = 400;
     public static PanelLateral lateral = null;
     public static VentanaPrincipal ventanaPrincipal= null;
-    public VentanaPrincipal() {
-        GroupLayout gr = new GroupLayout(this);
+    public static String usuario = null;
+    
+    
+    public VentanaPrincipal(String text) {
+        usuario = text;
         ventanaPrincipal = this;
+        this.setLayout(null);
         this.setSize(tamañoW, tamañoH);
         this.setLocationRelativeTo(null);
         this.setUndecorated(true);
@@ -32,6 +36,7 @@ public class VentanaPrincipal extends JFrame {
         PanelLateral l = new PanelLateral();
         lateral = l;
         this.add(l);
+        
         this.repaint();
     }
 }

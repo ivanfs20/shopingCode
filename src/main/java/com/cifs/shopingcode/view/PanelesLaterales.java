@@ -14,6 +14,7 @@ import javax.swing.JPanel;
 public class PanelesLaterales extends JPanel {
 
     public PanelesLaterales() {
+        this.setLayout(null);
         this.setSize(470, 350);
         this.setLocation(120, 35);
         this.setBackground(Color.white);

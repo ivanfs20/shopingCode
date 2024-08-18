@@ -16,18 +16,24 @@ import javax.swing.GroupLayout;
  */
 public class PanelConfiguracion extends PanelesLaterales{
     public PanelConfiguracion(){
-        GroupLayout gr = new GroupLayout(this);
         LabelEstandarizado sucursal = new LabelEstandarizado("SUCURSAL: ",15);
         sucursal.setLocation(65,100);
+        sucursal.setSize(500, 20);
         this.add(sucursal);
         LabelEstandarizado nameSucursal = new LabelEstandarizado("NOMBRE: ",15);
         nameSucursal.setLocation(65, 130);
+        nameSucursal.setSize(500, 20);
         this.add(nameSucursal);
         LabelEstandarizado numeroEmpleado = new LabelEstandarizado("NUMERO EMPLEADO: ",15);
         numeroEmpleado.setLocation(65,160);
+        numeroEmpleado.setSize(500, 20);
         this.add(numeroEmpleado);
-        LabelEstandarizado nameEmpleado = new LabelEstandarizado("NOMBRE: ",15);
+        
+        System.out.println("User: "+VentanaPrincipal.usuario);
+        
+        LabelEstandarizado nameEmpleado = new LabelEstandarizado("NOMBRE: "+VentanaPrincipal.usuario,15);
         nameEmpleado.setLocation(65, 190);
+        nameEmpleado.setSize(500, 20);
         this.add(nameEmpleado);
         
         BotonEstandar salir = new BotonEstandar("SALIR",200,310);

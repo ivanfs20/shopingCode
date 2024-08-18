@@ -18,9 +18,7 @@ public class LabelEstandarizado extends JLabel{
         this.setFont(new Font("Dialog",Font.ROMAN_BASELINE,8));
         this.setVisible(true);
     }
-    
-    
-    
+
     public LabelEstandarizado(String texto,int sizeFont){
         this.setSize(200,20);
         this.setText(texto);

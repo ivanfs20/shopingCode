@@ -28,7 +28,7 @@ public class PanelLateral extends JPanel {
     public static PanelConfiguracion pnConfiguracion = null;
 
     public PanelLateral() {
-        GroupLayout gr = new GroupLayout(this);
+        this.setLayout(null);
         this.setSize(tamañoW, VentanaPrincipal.tamañoH - 50); //V T H = 400 -50 =350 / 4 = 
         //75 de H para cada Boton o seccion y 10 de separacoon
         this.setLocation(10, 35);

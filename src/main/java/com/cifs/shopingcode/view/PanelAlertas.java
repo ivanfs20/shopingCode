@@ -11,12 +11,10 @@ import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.GroupLayout;
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-import javax.swing.border.Border;
 
 /**
  *
@@ -27,7 +25,7 @@ public class PanelAlertas extends JPanel {
     public static PanelAlertas panelAlertas = null;
 
     public PanelAlertas() {
-        GroupLayout gr = new GroupLayout(this);
+        this.setLayout(null);
         this.setSize(200, 150);
         this.setBackground(Color.black);
         
@@ -63,11 +61,8 @@ public class PanelAlertas extends JPanel {
             }
 
         });
-       // ingresarTexto(tipo,mensaje);
-
         this.add(btnYes);
         this.add(btnNo);
-        //this.add(labelMensaje);
         this.setVisible(true);
     }
 
